@@ -1,0 +1,129 @@
+Manual -Done
+Sql -Done
+API -Done
+J meter -Done
+Jira -Done
+Java --  95 % Done 
+Automation -- WIP 
+
+Mobile Testing 
+Project 
+Profile and Resume Creation 
+
+========================================================
+
+feature ABC [Dev : 3 QA : 2]
+
+QA -- Test case --- 20 TC 
+
+-- peer review --- 25 TC 
+-- PO Meeting review --- 25 TC 
+
+----Testing Start 
+bug raise -- subbug --- Retest -- resolved  ---
+
+Testing -- Ready for demo --- Done 
+
+==============================================
+
+PO Meeting --- 25 TC --- 2 Regression 3 Critical Regression == 5 TC 
+
+Release 12.4.0 ---
+Code fridge --Regression Testing  --  Main Relese 
+
+12.4.1 ---- point release 
+code fridege --Critical Regression Suite -- release 
+
+
+---Automation Testing -------
+Testing any application feature with the help of Automation Tool 
+
+Tool :
+protector
+Appium  --- mobile Automation
+Selenium
+Sahi
+Sahi pro
+Ranorex 
+
+Manual Testing Disadvantage :
+----------------------
+1. required more resources 
+2.crossBrowser Testing time consuming and its difficult to test--- 10 min * 3 Browser == 30 min 
+3.Regression Test -- time consuming 
+4.Test cycle duration --increase 
+
+Advantages of Automation Test :
+---------------------
+1. Required less resources 
+2. crossbrowser testing Regresion Testing -- required less time 
+3. Test cycle duration - decrease 
+
+
+-------============----------------
+
+Why Selenium ?
+
+1. Open source tool -- No Licence required 
+2. Support multiple languages -- C# ,Java ,Pearl ,Ruby ,Python .....
+3.Support multiple O. S.
+4.Crossbrpwser testing is easy to implimate 
+
+Disadvantage :
+------------
+
+1.Selenium only automate Web Application .can not automate 
+Desktop or Stadalone Applicatin EX.Calculator
+
+2.we can not automate Captcha and Barcode 
+3.File Upload and download task we can not implimante using selenium 
+  Third party tool -AutoIT
+
+4.We can not perform Adhoc Testing 
+
+======================================================
+
+Selenium WebDriver Arch 
+
+SearchContext(I) -extends--WebDriver (I)--implements--RemoteWebDriver (C)
+-extends--ChromiumDriver -extends -ChromeDriver/EdgeDriver...
+
+=========================================================
+Navigation :
+
+        driver.navigate().to("https://demo.guru99.com/popup.php");
+		
+		driver.navigate().back();
+		
+		Thread.sleep(5000); // 5 sec
+		driver.navigate().forward();
+		
+		Thread.sleep(5000); // 5 sec
+		driver.navigate().refresh();
+
+diffrence between get ("") and navigate ().to("")
+
+get() : used to navigate particular URL .it waits till URL load
+
+Navigate() : used to navigate particluar URL .it does not wait 
+           Maintain Browser history --- we can navigate Back ,Forward ,refresh 
+           
+
+diffrence close() and quit() method
+
+close() -- close current browser open window
+quit() -close current as well as open browser window 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
