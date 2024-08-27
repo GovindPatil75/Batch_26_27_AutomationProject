@@ -114,6 +114,54 @@ diffrence close() and quit() method
 close() -- close current browser open window
 quit() -close current as well as open browser window 
 
+====================================================
+WebElement : 
+
+Anything on Webpage --WebElement 
+
+text field 
+Button
+link
+Image
+checkbox
+Radio Button 
+DropDown 
+
+Locators :
+----------------
+we can identify the WebElement 
+
+8 Types of Locators 
+
+1.ID
+
+WebElement element=driver.findElement(By.id("id value"));
+
+2.Name
+3.Tagname
+4.Css Selector
+5.Xpath 
+6.linktext
+7.partial link text
+8.ClassName 
+
+DOM -Document Object model 
+
+WebElement element=driver.findElement(By.id("id value"));
+
+Automate : Registration page using Name Locator 
+
+Url : https://demo.guru99.com/test/newtours/register.php
+
+
+
+
+
+
+
+
+
+
 
 
 

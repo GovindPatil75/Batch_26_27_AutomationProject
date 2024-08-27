@@ -21,6 +21,7 @@ public class FirstTestScript {
 		// to maximize browser window 
 		driver.manage().window().maximize();
 		
+		//26/8/2024 Session 
 		driver.navigate().to("https://demo.guru99.com/popup.php");
 		
 		driver.navigate().back();
