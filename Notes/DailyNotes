@@ -153,6 +153,38 @@ Automate : Registration page using Name Locator
 
 Url : https://demo.guru99.com/test/newtours/register.php
 
+====================================
+Xpath Locator : 
+
+1.Tagname -- anything after < --- ex. <input ,<li ,<a
+2 .attribute name
+attribute value
+
+attribute name="attribute value"
+ex . name="phone"
+
+3.
+text   --- >define<
+ ex. >Forgotten password?<
+
+
+Absolute Xpath : (/)
+--------------------
+navigation start from parent node --- immidiate child node ---element 
+
+WebElement email=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[1]/input"));
+email.sendKeys("Test");
+
+WebElement password=driver.findElement(By.xpath("/html/body/div[1]/div[1]/div[1]/div/div/div/div[2]/div/div[1]/form/div[1]/div[2]/div/input"));
+password.sendKeys("12345678");
+
+DisAdvantages : 
+1. UI changes -- Xpath expression collapse -- No such Element exception
+2.Lengthly expression -- difficult to maintain 
+
+=========================
+Relative XPath (//)
+
 
 
 
