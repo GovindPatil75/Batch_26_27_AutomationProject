@@ -185,8 +185,40 @@ DisAdvantages :
 =========================
 Relative XPath (//)
 
+Navigate parent to any child / Child node -- identify 
 
+Xpath By Attribute 
+---------------------
+1. Attribute name="Attribute value"
+------------------------
+<.... ---Tagname 
 
+//tagname[@Attribute name='attribute value']
+
+//input[@id='email']
+//input[@id='pass']
+
+WebElement Email=driver.findElement(By.xpath("//input[@id='email']"));
+WebElement element=driver.findElement(By.xpath("//tagname[@Attribute name='attribute value']"));
+
+=============================
+2.Xpath By text() 
+
+>define<
+
+//tagname[text()='text value']
+
+//a[text()='Forgotten password?']
+
+WebElement element=driver.findElement(By.xpath("//tagname[text()='text value']"));
+
+WebElement FP=driver.findElement(By.xpath("//a[text()='Forgotten password?']"));
+FP.click();
+
+==========================================
+
+Xpath By Contains()
+Xpath By Index
 
 
 
