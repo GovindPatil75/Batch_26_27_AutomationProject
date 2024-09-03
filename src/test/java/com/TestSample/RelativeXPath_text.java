@@ -15,7 +15,7 @@ public class RelativeXPath_text {
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 		
-		//WebElement -- Relative XPath -text()
+		//WebElement -- Relative XPath -Xpath By text()
 		//tagname[text()='text value']
 		//WebElement element =driver.findElement(By.xpath("//tagname[text()='text value']"));
 

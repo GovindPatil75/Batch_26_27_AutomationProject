@@ -217,10 +217,33 @@ FP.click();
 
 ==========================================
 
-Xpath By Contains()
-Xpath By Index
+Xpath By Contains():
 
+id="test_456"
 
+//tagname[contains(@attributename,'partail value static')]
+
+WebElement element=driver.findElement(By.xpath("//tagname[contains(@attributename,'partail value static')]"));
+element.click();
+
+//tagname[contains(text(),'partial text value')]
+
+WebElement element=driver.findElement(By.xpath("//tagname[contains(text(),'partial text value')]"));
+
+Xpath By Index :
+
+(xpath Expression)[index]
+driver.findElement(By.xpath("(xpath Expression)[index]"));
+
+WebElement surname=driver.findElement(By.xpath("(//input[@type='text'])[3]"));
+==================
+
+List<WebElement> element=driver.findElements(By.xpath("//input[@type='text']"));
+
+element.get(1);
+element.get(2);
+
+================================================
 
 
 
