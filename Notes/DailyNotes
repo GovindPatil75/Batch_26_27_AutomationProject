@@ -244,13 +244,18 @@ element.get(1);
 element.get(2);
 
 ================================================
+How to handle Drop Down in selenium 
+---------------------
+WebElement ---DropDown ----tagname --select
 
+Select Class
 
+WebElement element=driver.findElement(By.xpath("xpath Expression"));
+Select drophandle=new Select(element);
 
-
-
-
-
+drophandle.selectByIndex(5); //
+drophandle.selectByvalue("");
+drophandle.selectByVisibletext("");
 
 
 

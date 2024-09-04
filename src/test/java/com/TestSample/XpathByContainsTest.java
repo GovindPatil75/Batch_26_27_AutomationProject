@@ -22,10 +22,8 @@ public class XpathByContainsTest {
 		
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("Test");
 		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys("12345678");
-		
-	   Thread.sleep(5000);
-	   WebElement loginBtn=driver.findElement(By.xpath("//button[contains(@id,'u_0_9')]"));
-	   loginBtn.click();
+        driver.findElement(By.xpath("//button[contains(@id,'u_0_5')]")).click();
+	   
 	
 	//WebElement FP=driver.findElement(By.xpath("//a[contains(text(),'Forgotten ')] "));
 	//FP.click();
