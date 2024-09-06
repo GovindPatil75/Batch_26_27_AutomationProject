@@ -257,6 +257,30 @@ drophandle.selectByIndex(5); //
 drophandle.selectByvalue("");
 drophandle.selectByVisibletext("");
 
+==================================================
+How to capture screenshot 
+
+full page screenshot
+
+WebDriver driver=new ChromeDriver();
+
+TakesScreenshot ts=(TakesScreenshot)driver;
+
+ChromeDriver driver=new ChromeDriver();
+
+TakesScreenshot ts=driver;
+File src=ts.getscreenshotAs(outputType.File);
+File destn=new File("location//test.png");
+FileUtils.copyfile(src,destn);
+
+
+WebElement/Section Screenshot
+
+WebElement element=driver.findElement(By.xpath("xpath expression"));
+File src=element.getscreenshotAs(outputType.file);
+File destn=new File("location\\logo.png");
+FileUtils.copyfile(src,destn);
+
 
 
 
