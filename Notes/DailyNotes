@@ -281,8 +281,27 @@ File src=element.getscreenshotAs(outputType.file);
 File destn=new File("location\\logo.png");
 FileUtils.copyfile(src,destn);
 
+========================================
+Actions class 
+
+mouse movement /keyboard  --- Actions 
+
+elemement + mouseHover +click +options 
+
+element +right click + options 
+
+double click element 
+
+drag and drop 
+
+capital letters --- Shift + data + Shift 
+
+Copy paste -- Ctrl +a /ctrl +c /ctrl +v
 
 
+Actions act=new Actions(driver);
+
+act.moveToElement(element).click().build().perform();
 
 
 
