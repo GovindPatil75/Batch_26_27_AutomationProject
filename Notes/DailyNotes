@@ -303,6 +303,32 @@ Actions act=new Actions(driver);
 
 act.moveToElement(element).click().build().perform();
 
+==============
+Drag and drop 
+
+Actions act=new Actions(driver);
+WebElement element =driver.findELement(By.xpath(""));
+WebElement traget =driver.findELement(By.xpath(""));
+
+act.DragandDrop(element,traget).build().perform();
+
+Actions --- keyboard Action perform 
+
+element -- upper case data send -- keyboard 
+
+KeyDown()
+KeyUp()
+
+Scenario : Send value to ELement in Upper case using Actions class
+
+Actions act=new Actions(driver);
+
+act.KeyDown(elemet,Keys.SHIFT).sendkeys("test").keyUp(Keys.SHIFT).build().perform();
+
+
+
+
+
 
 
 
