@@ -324,6 +324,39 @@ Scenario : Send value to ELement in Upper case using Actions class
 Actions act=new Actions(driver);
 
 act.KeyDown(elemet,Keys.SHIFT).sendkeys("test").keyUp(Keys.SHIFT).build().perform();
+==================================================
+How to Handle Alert :
+
+Alert Interface : 
+
+3 Types :
+Simple Alert :
+warning message --- OK button 
+Prompt Alert :
+
+user input accept -- sendkeys();
+
+Confirmation Alert :
+
+confimation message --- action perform -OK/Cancel
+
+Alert alt=driver.switchto().alert();
+
+alt.accept(); // ok button
+alt.dismiss(); // Cancel Button
+alt.gettext(); // Alert text 
+alt.sendkeys("Alert input"); //
+
+
+
+
+
+
+
+
+
+
+
 
 
 
