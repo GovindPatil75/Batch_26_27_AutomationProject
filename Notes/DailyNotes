@@ -347,7 +347,19 @@ alt.dismiss(); // Cancel Button
 alt.gettext(); // Alert text 
 alt.sendkeys("Alert input"); //
 
+=============================================
+Child Browser window Handle :
 
+String parentID=driver.getwindowhandle(); returntype-string// provide parent window ID/Address
+Set<String> ALLID=driver.getwindowhandles(); set<String> // provide parent +child window ID/Address
+
+List<String> list=new ArrayList<String>(ALLID);
+list.get(0); // parent id
+list.get(1); // child window id
+
+driver.switchto().window(list.get(1));
+
+driver.switchto().window(parentID);
 
 
 
