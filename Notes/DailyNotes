@@ -361,9 +361,24 @@ driver.switchto().window(list.get(1));
 
 driver.switchto().window(parentID);
 
+============================================================
+Scrolling :
 
+Pixel 
+Element
 
+JavaScriptEXecutor js =driver;
 
+//Top-bottom
+js.executeScript("window.scrollBy(0,400)","");
+
+//bottom-top
+js.executeScript("window.scrollBy(0,-400)","");
+
+============================================
+Element
+WebElement element=driver.findElement(By.xpath(""));
+js.executeScript("arguments[0].scrollIntoView();",element);
 
 
 
