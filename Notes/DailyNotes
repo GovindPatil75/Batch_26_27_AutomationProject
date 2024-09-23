@@ -380,11 +380,17 @@ Element
 WebElement element=driver.findElement(By.xpath(""));
 js.executeScript("arguments[0].scrollIntoView();",element);
 
+========================================
 
-
-
-
-
+How to read test data from Excel
+------------
+1. Apache Poi -jar 
+2. Project add -Excel 
+3. String RefVar ="Location";
+   FileInputStream fis=new FileInputStream(RefVar);
+   XSSFWorkBook WB=new XSSFWorkBook(fis);
+   String Data=WB.getsheet("Sheet1").getrow(0).getcell(0).getstringcellvalue();
+   
 
 
 

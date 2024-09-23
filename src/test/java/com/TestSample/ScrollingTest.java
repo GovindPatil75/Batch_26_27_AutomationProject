@@ -34,6 +34,12 @@ public class ScrollingTest {
         WebElement Submit=driver.findElement(By.xpath("//input[@name='submit']"));
         js.executeScript("arguments[0].scrollIntoView();", Submit);
         
+        //Library.scrollByElement(driver, Submit);
+        
+        // Max pixel scroll action perfom 
+        
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)", "");
+        
         
 	}
 
