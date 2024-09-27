@@ -391,14 +391,24 @@ How to read test data from Excel
    XSSFWorkBook WB=new XSSFWorkBook(fis);
    String Data=WB.getsheet("Sheet1").getrow(0).getcell(0).getstringcellvalue();
    
+==============================================
 
+webpage =Frame /Iframe 
 
+frame : UI devloper split screen horizantially and vertically framset
 
+HTML 5 : deprecated frame and frameset tag 
 
+Iframe : Webpage -- diffrent resouces content display 
 
+Mainpage --->Frame 1
+driver.switchto().frame(); // WebElement/Id or name/index
 
+Frame1 ---->Mainpage
+driver.switchto().deafultcontent();
 
-
+mainpage -->Frame2
+driver.switchto().frame(); // WebElement/Id or name/index
 
 
 
