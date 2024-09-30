@@ -409,6 +409,38 @@ driver.switchto().deafultcontent();
 
 mainpage -->Frame2
 driver.switchto().frame(); // WebElement/Id or name/index
+==============================================
+TestNG - Test Next genration
+
+Test Management tool / TestNG Framework 
+
+1. class -10 TC --  12 Classes -120 TC --- Testng.xml -runner file 
+2. multiple  annotation -- @Before @After @Test @parameters 
+3. provides multiple keywords 
+   priority 
+   Inocationcount=3
+   enabled=false
+   dependsonmethods 
+  
+  100 --- 60 Regression - 40 Critical regression 
+  execute -- 60 / 40
+
+5. groups ---> 
+6.Testng.xml -runner file 
+  exclude /include 
+7.result of an operation verify -- Assert
+8. Report genration -- emailable report/ Index.html 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
