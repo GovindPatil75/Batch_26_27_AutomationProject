@@ -431,6 +431,20 @@ Test Management tool / TestNG Framework
 7.result of an operation verify -- Assert
 8. Report genration -- emailable report/ Index.html 
 
+=================================================
+annotation :
+metadata -- provide --- jvm /compiler
+
+ @BeforeSuite
+ @BeforeTest
+ @BeforeClass
+ @BeforeMethod
+ @Test
+ @AfterMethod
+ @AfterClass
+ @AfterTest
+ @AfterSuite
+
 
 
 
