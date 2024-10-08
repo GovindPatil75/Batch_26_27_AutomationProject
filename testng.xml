@@ -2,8 +2,9 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  <parameter name="BrowserName" value="Edge"></parameter>
     <classes>
-      <class name="com.Testngtest.SessionTestng_6"/>
+      <class name="com.CrossBrowserTest.VerifyLoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

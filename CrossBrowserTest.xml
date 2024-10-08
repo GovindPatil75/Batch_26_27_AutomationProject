@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowserSuite">
+  <test thread-count="5" name="CrossBrowserTest_Chrome">
+  <parameter name="BrowserName" value="Chrome"></parameter>
+    <classes>
+      <class name="com.CrossBrowserTest.VerifyLoginTest"/>
+      <class name="com.CrossBrowserTest.VerfiyHomePageTest">
+      <methods>
+      <exclude name="TC_003"></exclude>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- CrossBrowserTest -->
+  
+  <test thread-count="5" name="CrossBrowserTest_Edge">
+  <parameter name="BrowserName" value="Edge"></parameter>
+    <classes>
+      <class name="com.CrossBrowserTest.VerifyLoginTest"/>
+      <class name="com.CrossBrowserTest.VerfiyHomePageTest"/>
+    </classes>
+  </test> <!-- CrossBrowserTest -->
+  
+</suite> <!-- CrossBrowserSuite -->
