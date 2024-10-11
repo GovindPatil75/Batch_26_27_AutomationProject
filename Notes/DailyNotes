@@ -445,7 +445,28 @@ metadata -- provide --- jvm /compiler
  @AfterTest
  @AfterSuite
 
+------------------------------
 
+Assert (Hard Assert)
+------------------
+TestNG class
+Result of an operation verify - Assert 
+
+Assert.assertequals(actual,expected);
+
+Soft Assert (Verify)
+---------------------------
+Result of an operation verify - Soft Assert
+
+SoftAssert --class
+
+we need to create object of SoftAssert class
+
+SoftAssert soft=new SoftAssert();
+ 
+ soft.assertequals(actual,Expected);
+ 
+ 
 
 
 
