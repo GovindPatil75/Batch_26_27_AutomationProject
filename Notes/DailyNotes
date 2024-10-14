@@ -465,7 +465,46 @@ we need to create object of SoftAssert class
 SoftAssert soft=new SoftAssert();
  
  soft.assertequals(actual,Expected);
- 
+ ==============================================
+ Git --- Versi0n control system tool
+
+Github -- Repository 
+
+Download git ?
+------------------------
+https://git-scm.com/downloads?ref=devkoriel
+
+Url Project : https://github.com/GovindPatil75/Batch_26_27_AutomationProject.git
+
+Clone -- Local system -- import -Eclipse --- Project Script 
+
+git bash cmd
+----------------
+git clone ProjectUrl 
+
+Jira Assign TC001 - Script 
+
+git branch BranchName
+git checkout Branchname
+git pull origin master
+git branch
+
+Switch ---
+
+Script write --->
+
+
+git add .
+git commit -m "Message"
+git push origin Branchname
+
+-----> 
+
+Raise Pull request -- PR 
+Add reviewer --Code -- approve
+merge localbranch--->Master
+
+================================
  
 
 
